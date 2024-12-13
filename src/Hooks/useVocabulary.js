@@ -9,7 +9,7 @@ export function useVocabulary(_id) {
 
   useEffect(() => {
     setIsLoading(true)
-    fetch(`http://localhost:5000/lessons/${_id}/words`,{
+    fetch(`https://myapp-zht4-qebyv7ha4-ashik763s-projects.vercel.app/lessons/${_id}/words`,{
           method: "GET", 
           headers: {
             "Content-Type": "application/json", 

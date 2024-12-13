@@ -18,7 +18,7 @@ const CreateWord = () => {
     e.preventDefault();
 
 
-        fetch('http://localhost:5000/words/create-a-word', {
+        fetch('https://myapp-zht4-qebyv7ha4-ashik763s-projects.vercel.app/words/create-a-word', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json', 

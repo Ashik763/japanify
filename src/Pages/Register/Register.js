@@ -40,7 +40,7 @@ const Register = () => {
         .then((imgData) => {
           if (imgData.success) {
             const photoURL = imgData.data.url;
-            fetch('http://localhost:5000/signup', {
+            fetch('https://myapp-zht4-qebyv7ha4-ashik763s-projects.vercel.app/signup', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

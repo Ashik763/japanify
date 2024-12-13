@@ -52,7 +52,7 @@ const AllUsers = () => {
   const handleUpdate = async(user,value) => {
   
     fetch(
-      `http://localhost:5000/users/update/${user._id}`,
+      `https://myapp-zht4-qebyv7ha4-ashik763s-projects.vercel.app/users/update/${user._id}`,
       {
         method: "PATCH",
         headers: {
@@ -80,7 +80,7 @@ const AllUsers = () => {
 
   const fetchLessons = () => {
     setLoading(true);
-    fetch(`http://localhost:5000/users/all`,{
+    fetch(`https://myapp-zht4-qebyv7ha4-ashik763s-projects.vercel.app/users/all`,{
               method: "GET", 
               headers: {
                 "Content-Type": "application/json", 
@@ -99,7 +99,7 @@ const AllUsers = () => {
   };
 
 //   const handleDelete = (_id) => {
-//     fetch(`http://localhost:5000/lessons/delete/${_id}`, {
+//     fetch(`https://myapp-zht4-qebyv7ha4-ashik763s-projects.vercel.app/lessons/delete/${_id}`, {
 //       method: "DELETE",
 //     })
 //       .then((res) => res.json())

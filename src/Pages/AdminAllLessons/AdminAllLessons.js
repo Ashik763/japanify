@@ -44,7 +44,7 @@ const AdminAllLessons = () => {
   const handleUpdate = (e) => {
     console.log("clicked");
     console.log(lessonId);
-    fetch(`http://localhost:5000/lessons/update/${lessonId}`, {
+    fetch(`https://myapp-zht4-qebyv7ha4-ashik763s-projects.vercel.app/lessons/update/${lessonId}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -69,7 +69,7 @@ const AdminAllLessons = () => {
 
   const fetchLessons = () => {
     setLoading(true);
-    fetch(`http://localhost:5000/lessons/all`,{
+    fetch(`https://myapp-zht4-qebyv7ha4-ashik763s-projects.vercel.app/lessons/all`,{
       method:"GET",
       headers: {
         "Content-Type": "application/json",
@@ -88,7 +88,7 @@ const AdminAllLessons = () => {
   };
 
   const handleDelete = (_id) => {
-    fetch(`http://localhost:5000/lessons/delete/${_id}`, {
+    fetch(`https://myapp-zht4-qebyv7ha4-ashik763s-projects.vercel.app/lessons/delete/${_id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

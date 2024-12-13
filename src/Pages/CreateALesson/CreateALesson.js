@@ -11,7 +11,7 @@ const CreateALesson = () => {
     e.preventDefault();
     if (lessonName && lessonNumber) {
 
-        fetch('http://localhost:5000/lessons/create-a-lesson', {
+        fetch('https://myapp-zht4-qebyv7ha4-ashik763s-projects.vercel.app/lessons/create-a-lesson', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

@@ -61,7 +61,7 @@ const ViewAllVocabularies = () => {
     console.log("clicked");
     console.log();
     fetch(
-      `http://localhost:5000/words/update/${_id}`,
+      `https://myapp-zht4-qebyv7ha4-ashik763s-projects.vercel.app/words/update/${_id}`,
       {
         method: "PATCH",
         headers: {
@@ -93,7 +93,7 @@ const ViewAllVocabularies = () => {
 
   const fetchLessons = () => {
     setLoading(true);
-    fetch(`http://localhost:5000/words/all`, {
+    fetch(`https://myapp-zht4-qebyv7ha4-ashik763s-projects.vercel.app/words/all`, {
         method: "GET", 
         headers: {
         "Content-Type": "application/json", 
@@ -112,7 +112,7 @@ const ViewAllVocabularies = () => {
   };
 
   const handleDelete = (_id) => {
-    fetch(`http://localhost:5000/words/delete/${_id}`, {
+    fetch(`https://myapp-zht4-qebyv7ha4-ashik763s-projects.vercel.app/words/delete/${_id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json", 

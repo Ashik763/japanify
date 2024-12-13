@@ -13,7 +13,7 @@ export default  function AllLessons() {
 
   const [lessons, setLessons] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/lessons/all", {
+    fetch("https://myapp-zht4-qebyv7ha4-ashik763s-projects.vercel.app/lessons/all", {
       method: "GET", 
       headers: {
         "Content-Type": "application/json", 
